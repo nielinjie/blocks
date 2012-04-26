@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <viewerContribution
+            id="nielinjie.app.blocks.methods"
+            targetID="#CompilationUnitEditorContext">
+         <action
+               class="nielinjie.app.blocks.ui.MehtodMapDisplayDelegate"
+               id="nielinjie.app.blocks.MehtodMapDisplayAction"
+               label="MethodsMap Display"
+               menubarPath="additions">
+         </action>
+          <!--action
+               class="nielinjie.app.blocks.ui.MehtodMapFileSaveDelegate"
+               id="nielinjie.app.blocks.MehtodMapFileSaveAction"
+               label="MethodsMap SaveToFile"
+               menubarPath="additions">
+         </action-->
+         <action
+               class="nielinjie.app.blocks.ui.BlockFlowDisplayDelegate"
+               id="nielinjie.app.blocks.BlockFlowDisplayAction"
+               label="BlockFlow Display"
+               menubarPath="additions">
+         </action>
+         <!--action
+               class="nielinjie.app.blocks.ui.BlockFlowFileSaveDelegate"
+               id="nielinjie.app.blocks.BlockFlowFileSaveAction"
+               label="BlockFlow SaveToFile"
+               menubarPath="additions">
+         </action-->
+      </viewerContribution>
+   </extension>
+
+</plugin>
